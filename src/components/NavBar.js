@@ -35,9 +35,9 @@ export default class NavBar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background-color: var(--mainBlue);
+  background-color: var(--primaryColor);
   .nav-link {
-    color: var(--mainWhite) !important;
+    color: var(--mainLightColor) !important;
     font-size: 1.3rem;
     text-transform: capitalize;
   }

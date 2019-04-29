@@ -1,26 +1,48 @@
 :root {
-  --mainBlue: #264c73;
-  --lightBlue: #81a8d1;
-  --mainWhite: #e4e3e8;
-  --mainDark: #152639;
-  --mainYellow: #d7a362;
+  --primaryColor: #264c73;
+  --secondaryColor: #5adbff;
+  --mainLightColor: #f6f6f8;
+  --mainDarkColor: #0d1a27;
+  --mainContrastColor: #fe9000;
 }
 
 body {
-  font-family: 'Oswald', sans-serif !important;
-  background: var(--mainWhite) !important;
-  color: var(--mainDark) !important;
+  font-family: 'Roboto', sans-serif !important;
+  background: var(--mainLightColor) !important;
+  color: var(--mainDarkColor) !important;
+  overflow-x: hidden;
 }
 
 .text-title {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Anton', sans-serif;
   text-transform: uppercase;
 }
 
 .text-blue {
-  color: var(--mainBlue);
+  color: var(--primaryColor);
 }
 
 .text-bright {
-  color: var(--lightBlue);
+  color: var(--secondaryColor);
+}
+
+.btn-dark {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDarkColor);
+  border: 0.1rem solid var(--mainDarkColor) !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+}
+
+.btn-dark:hover {
+  background: var(--mainDarkColor);
+  color: var(--mainLightColor);
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainContrastColor);
 }
